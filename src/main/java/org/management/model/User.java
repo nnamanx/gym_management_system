@@ -10,6 +10,7 @@ import java.time.format.DateTimeFormatter;
 
 @Data
 @FieldDefaults(level = AccessLevel.PRIVATE)
+
 public class User {
 
     Long id;
@@ -24,19 +25,53 @@ public class User {
     int paymentAmount;
     int status;
 
-    public User(String name, String surname, String fin, String serialNo, LocalDate registrationDate, int status){};
-    public User(String name, String surname, String fin, String serialNo, LocalDate registrationDate, LocalDate expirationDate, int payment, int status){};
+    public User(String name, String surname, String fin, String serialNo, LocalDate registrationDate, LocalDate expirationDate, int payment, int status) {
+        this.name = name;
+        this.surname = surname;
+        this.fin = fin;
+        this.serialNo = serialNo;
+        this.registrationDate = registrationDate;
+        this.expirationDate = expirationDate;
+        this.paymentAmount = payment;
+        this.status = status;
+    }
+
+    ;
 
     public User(String name, String surname, int departure, int status) {
+        this.name = name;
+        this.surname = surname;
+        this.departure = departure;
+        this.status = status;
     }
 
     public User(String name, String surname, String fin, String serialNo, int i) {
+        this.name = name;
+        this.surname = surname;
+        this.fin = fin;
+        this.serialNo = serialNo;
+        this.status = i;
     }
 
-    public User(String name, String surname, String fin, String serialNo, DateTimeFormatter ofPattern, int status) {
+//    public User(String name, String surname, String fin, String serialNo, DateTimeFormatter ofPattern, int status) {
+//        this.name = name;
+//        this.surname = surname;
+//        this.fin = fin;
+//        this.serialNo = serialNo;
+//        this.registrationDate = registrationDate;
+//        this.status = status;
+//    }
+
+    public User(String name, String surname, String fin, String serialNo, LocalDate registrationDate, int status) {
+
+        this.name = name;
+        this.surname = surname;
+        this.fin = fin;
+        this.serialNo = serialNo;
+        this.registrationDate = registrationDate;
+        this.status = status;
     }
 
-    public User(String name, String surname, String fin, String serialNo, Date valueOf, int i) {
-    }
+
 }
 

@@ -24,10 +24,10 @@ public class UserServiceImpl implements UserService {
         String fin = inputString("Enter fin: ");
         String serialNo = inputString("Enter serial number: ");
         String registrationDateStr = inputString("Enter registration date (yyyy-MM-dd): ");
-        LocalDate registrationDate = LocalDate.parse(registrationDateStr);
-        java.sql.Date sqlRegistrationDate = java.sql.Date.valueOf(registrationDate);
+//        LocalDate registrationDate = LocalDate.parse(registrationDateStr);
+//        java.sql.Date sqlRegistrationDate = java.sql.Date.valueOf(registrationDate);
 
-        return new User(name, surname, fin, serialNo, sqlRegistrationDate, 1);
+        return new User(name, surname, fin, serialNo, LocalDate.parse(registrationDateStr), 1);
     }
 
     @Override

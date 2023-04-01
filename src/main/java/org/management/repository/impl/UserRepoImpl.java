@@ -24,8 +24,8 @@ public class UserRepoImpl extends DbConnector implements UserRepo {
             statement.setString(3, user.getFin());
             statement.setString(4, user.getSerialNo());
             statement.setInt(5, user.getDeparture());
-            statement.setDate(6, Date.valueOf(user.getRegistrationDate()));
-            statement.setDate(7, Date.valueOf(user.getExpirationDate()));
+            statement.setDate(6, user.getRegistrationDate() == null ? null : Date.valueOf(user.getRegistrationDate()));
+            statement.setDate(7, user.getExpirationDate() == null ? null : Date.valueOf(user.getExpirationDate()));
             statement.setInt(8, user.getPaymentAmount());
             statement.setInt(9, user.getStatus());
 
