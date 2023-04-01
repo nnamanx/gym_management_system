@@ -9,6 +9,7 @@ import java.util.List;
 
 import static org.management.util.Input.*;
 
+
 public class UserServiceImpl implements UserService {
 
     private final UserRepo userRepository;
@@ -23,11 +24,14 @@ public class UserServiceImpl implements UserService {
         String surname = inputString("Enter surname: ");
         String fin = inputString("Enter fin: ");
         String serialNo = inputString("Enter serial number: ");
+        int departure = inputInt("Enter departure: ");
         String registrationDateStr = inputString("Enter registration date (yyyy-MM-dd): ");
-//        LocalDate registrationDate = LocalDate.parse(registrationDateStr);
-//        java.sql.Date sqlRegistrationDate = java.sql.Date.valueOf(registrationDate);
+        String expirationDate = inputString("Enter registration date (yyyy-MM-dd): ");
+        int payment = inputInt("Enter payment: ");
 
-        return new User(name, surname, fin, serialNo, LocalDate.parse(registrationDateStr), 1);
+
+        return new User(name, surname, fin, serialNo, departure , LocalDate.parse(registrationDateStr), LocalDate.parse(expirationDate), payment,
+                1);
     }
 
     @Override

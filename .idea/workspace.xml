@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7edddc5-9e96-451e-a7de-dd9a7d491cd8" name="Changes" comment="&quot;first commit&quot;">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f7edddc5-9e96-451e-a7de-dd9a7d491cd8" name="Changes" comment="&quot;2nd commit&quot;">
       <change beforePath="$PROJECT_DIR$/src/main/java/org/management/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/management/model/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/management/query/UserQuery.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/management/query/UserQuery.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/management/repository/impl/UserRepoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/management/repository/impl/UserRepoImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/management/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/management/service/UserServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,7 +87,7 @@
       <updated>1680248254205</updated>
       <workItem from="1680248257101" duration="11449000" />
       <workItem from="1680323770199" duration="11680000" />
-      <workItem from="1680340151833" duration="2652000" />
+      <workItem from="1680340151833" duration="3273000" />
     </task>
     <task id="LOCAL-00001" summary="&quot;first commit&quot;">
       <created>1680341085190</created>
@@ -105,7 +103,14 @@
       <option name="project" value="LOCAL" />
       <updated>1680341143705</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="&quot;2nd commit&quot;">
+      <created>1680342974942</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1680342974942</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,7 +118,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="&quot;first commit&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&quot;first commit&quot;" />
+    <MESSAGE value="&quot;2nd commit&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&quot;2nd commit&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -9,8 +9,10 @@ import java.time.format.DateTimeFormatter;
 
 
 @Data
+@Builder
+@NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
-
+@AllArgsConstructor
 public class User {
 
     Long id;
